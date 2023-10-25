@@ -15,21 +15,25 @@ import com.vaadin.flow.router.RouteAlias;
 @RouteAlias(value = "", layout = MainLayout.class)
 public class HelloWorldView extends HorizontalLayout {
 
-    private TextField name;
-    private Button sayHello;
-
     public HelloWorldView() {
-        name = new TextField("Ваше имя");
-        sayHello = new Button("Скажи привет");
-        sayHello.addClickListener(e -> {
-            Notification.show("Привет " + name.getValue());
-        });
-        sayHello.addClickShortcut(Key.ENTER);
+        TextField name = new TextField("Ваше имя");
+        Button sayHello = getConfiguredButton(name.getValue());
 
         setMargin(true);
         setVerticalComponentAlignment(Alignment.END, name, sayHello);
 
         add(name, sayHello);
+    }
+
+    private Button getConfiguredButton(String text) {
+
+        Button sayHello = new Button("Скажи привет");
+        sayHello.addClickListener(cleckEvent -> {
+            Notification.show("Привет " + text);
+        });
+        sayHello.addClickShortcut(Key.ENTER);
+
+        return sayHello;
     }
 
 }
