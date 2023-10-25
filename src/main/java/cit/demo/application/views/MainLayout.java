@@ -1,9 +1,10 @@
-package com.example.application.views;
+package cit.demo.application.views;
 
-import com.example.application.views.about.AboutView;
-import com.example.application.views.helloworld.HelloWorldView;
-import com.example.application.views.masterdetail.MasterDetailView;
-import com.example.application.views.test.TestView;
+import cit.demo.application.views.about.AboutView;
+import cit.demo.application.views.contacts.ContactsView;
+import cit.demo.application.views.helloworld.HelloWorldView;
+import cit.demo.application.views.masterdetail.MasterDetailView;
+import cit.demo.application.views.test.TestView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -57,6 +58,7 @@ public class MainLayout extends AppLayout {
         nav.addItem(new SideNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
         nav.addItem(new SideNavItem("Master-Detail", MasterDetailView.class, LineAwesomeIcon.COLUMNS_SOLID.create()));
         nav.addItem(new SideNavItem("Test View", TestView.class, LineAwesomeIcon.ADVERSAL.create()));
+        nav.addItem(new SideNavItem("Contact View", ContactsView.class, LineAwesomeIcon.APPLE.create()));
 
         return nav;
     }

@@ -1,8 +1,8 @@
-package com.example.application.views.masterdetail;
+package cit.demo.application.views.masterdetail;
 
-import com.example.application.data.SamplePerson;
-import com.example.application.services.SamplePersonService;
-import com.example.application.views.MainLayout;
+import cit.demo.application.data.SamplePerson;
+import cit.demo.application.services.SamplePersonService;
+import cit.demo.application.views.MainLayout;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;

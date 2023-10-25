@@ -1,6 +1,6 @@
-package com.example.application.views.test;
+package cit.demo.application.views.test;
 
-import com.example.application.views.MainLayout;
+import cit.demo.application.views.MainLayout;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;

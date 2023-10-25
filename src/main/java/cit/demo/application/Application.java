@@ -1,6 +1,6 @@
-package com.example.application;
+package cit.demo.application;
 
-import com.example.application.data.SamplePersonRepository;
+import cit.demo.application.data.SamplePersonRepository;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.theme.Theme;

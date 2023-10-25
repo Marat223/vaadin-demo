@@ -1,7 +1,7 @@
-package com.example.application.services;
+package cit.demo.application.services;
 
-import com.example.application.data.SamplePerson;
-import com.example.application.data.SamplePersonRepository;
+import cit.demo.application.data.SamplePerson;
+import cit.demo.application.data.SamplePersonRepository;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
